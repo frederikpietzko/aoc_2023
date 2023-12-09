@@ -1,4 +1,4 @@
-use std::{collections::HashSet, num::ParseIntError};
+use std::collections::HashSet;
 
 use anyhow::Result;
 use itertools::Itertools;
@@ -31,8 +31,7 @@ pub fn process(input: &str) -> Result<String> {
             if intersecting == 1 {
                 return 1;
             }
-            let sum = 2u32.pow(intersecting - 1);
-            sum
+            2u32.pow(intersecting - 1)
         })
         .sum::<Result<u32>>()?;
 
