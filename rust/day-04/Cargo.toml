@@ -1,0 +1,9 @@
+[package]
+name = "day-04"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow.workspace = true
+itertools.workspace = true
+test-log.workspace = true
